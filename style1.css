@@ -1,0 +1,90 @@
+table img{
+    width: 100px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* body{
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'roboto', sans-serif;
+background-color: #eee;
+} */
+
+.text{
+font-size: 40px;
+color: #eee;
+text-transform: capitalize;
+background: linear-gradient(-45deg, #eeaa52, #e73c6f, #2394d5, #2af3b7);
+background-size: 200% 200%;
+-webkit-background-clip: text;
+-webkit-text-stroke: 8px transparent;
+animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient{
+0%{
+background-position: 0% 50%;
+}
+50%{
+background-position: 100% 50%;
+}
+}
+
+#customers {
+font-family: Arial, Helvetica, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+
+#customers td, #customers th {
+border: 1px solid #ddd;
+padding: 5px;
+}
+
+tr:nth-child(even) {
+background-color: #D6EEEE;
+}
+
+td {
+text-align: left;
+}
+
+h1 {
+text-align: center;
+}
+
+#FullImageView {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .9);
+    text-align: center;
+}
+
+#FullImage {
+    padding: 20px;
+    max-width: 40%;
+    max-height: 40%;
+}
+
+#CloseButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
